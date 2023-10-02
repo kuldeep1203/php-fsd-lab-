@@ -1,0 +1,22 @@
+body{
+    background-color: #4C4C6D;
+
+
+}
+.header{
+    color: #FAF0E6;
+    text-align: center;
+    padding-top: 20px;
+}
+.btn {
+    color:#FAF0E6;
+    background-color: #374259;
+    
+
+}
+.text{
+    color:#F9E2AF;
+    /* text-align: center; */
+    padding-left: 10%;
+    font-family:  Helvetica, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', ;
+}

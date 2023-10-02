@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">FSD FORM</h1>
+    </div>
+    
+
+     <form action="databases.php" method="post">
+        <div class="text">
+            Enter Name: <input type="text" name ='aname' id="sname" placeholder="Name Surname"> <br><br>
+        Select School: <select id="school" name="school">
+            <option>Select your School</option>
+            <option>School of Engineering and Technology</option>
+            <option>School of Computer Science & Engineering</option>
+            <option>Ramcharan School of Leadership</option>
+            <option>School of Business</option>
+            <option>School of Economics and Commerce</option>
+            <option>School of Government</option>
+            <option>School of Health Sciences & Technology</option>
+            <option>School of Science & Environmental Studies</option>
+            <option>School of Design</option>
+            <option>School of Liberal Arts</option>
+            </select>            
+            <br><br>
+        PhoneNumber: <input type="number" name="pnumber" id="contact" onchange="validateNumber(this.value)"  onkeypress="validateNumber(this.value)" placeholder="10 digit PhoneNumber"><br><br>
+        Email Address: <input type="email" id="email" name="email_address" placeholder="Valid Email id"><br><br>
+        State: <input type="text" id="state" list="StateLists" name="state" onchange="filterCities()" placeholder="Select from dropdown"><br><br>
+
+        City: <input list="CityLists" id="city" name="city" placeholder="select from dropdown or type"><br><br>
+        Country: <input type="text" id="country" name ='country' ><br><br>
+        PinCode: <input type="number"  name ='pincode' maxlength=6 id="pincode" placeholder="6 Digit code" pattern="\d{6}" title="Enter 6 digit numbers only" onchange="validatePincode(this.value)" onkeypress="validatePincode(this.value)">
+
+        </div>
+        
+        <datalist id="StateLists">
+            <option>Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Gujarat</option>\
+            <option>   Tamil Nadu </option>
+        </datalist>
+        <datalist id="CityLists">
+  
+        </datalist>
+        <datalist id="schools">
+            
+        </datalist> <br><br>
+        <div class="container text-center">
+
+            <button type="submit" class="btn btn-success btn-sm" name="submit" value="set">
+                Submit
+            </button>
+            <!-- <a href="homepage.html" >
+                <button type="back" class="btn btn-success btn-sm" name="b" >
+                    Back
+                </button>
+            </a> -->
+        </div>
+        
+    </form>
+        
+
+    
+</div>
+<!-- Code injected by live-server -->
+<script src="i2.js" charset="utf-8"></script>
+	
+
+</body>
+<script src="i.js" charset="utf-8">
+
+    
+ </script>
+</html>
